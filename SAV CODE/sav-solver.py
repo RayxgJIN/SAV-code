@@ -316,9 +316,9 @@ for j in range (K):
     t_new[j], err_phi_list[j], err_theta_list[j] =1/SEC_NUM, np.max(err_phi), np.max(err_theta)
 
 
-print(t_new, new_err_phi_list, err_theta_list)
+print(t_new, err_phi_list, err_theta_list)
 #Plot the error norm
-plt.plot(t_new, new_err_phi_list, 'b-o', label='$\\varphi$')
+plt.plot(t_new, err_phi_list, 'b-o', label='$\\varphi$')
 plt.xlabel('Time step size')
 plt.ylabel('Error norm')
 plt.legend()
